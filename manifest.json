@@ -12,6 +12,7 @@
 	      "js/loader.js"
 	    ]
     },
+    "options_page": "options.html",
 	"minimum_chrome_version": "20",
 	"offline_enabled": true,
 	"permissions": [
