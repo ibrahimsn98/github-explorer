@@ -1,0 +1,22 @@
+{
+	"name": "Github Explorer",
+	"version": "1.0",
+	"description": "Explore GitHub Repositories",
+	"manifest_version": 2,
+	"chrome_url_overrides": {
+		"newtab": "index.html"
+	},
+	"background": {
+	    "scripts": [
+	      "js/jquery.js",
+	      "js/loader.js"
+	    ]
+    },
+	"minimum_chrome_version": "20",
+	"offline_enabled": true,
+	"permissions": [
+	    "storage",
+	    "*://*.api.github.com/*"
+	  ],
+	"short_name": "Github Explorer"
+}
