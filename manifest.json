@@ -6,6 +6,9 @@
 	"chrome_url_overrides": {
 		"newtab": "index.html"
 	},
+	"icons": {"16": "img/icon/icon16.png",
+	          "48": "img/icon/icon48.png",
+	          "128":"img/icon/icon128.png"},
 	"background": {
 	    "scripts": [
 	      "js/jquery.min.js",

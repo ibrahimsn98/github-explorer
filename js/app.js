@@ -15,7 +15,7 @@ $(document).ready(function() {
 			for (i=0; (i < data.data.length && i < 6); i++) {
 				var rand = Math.floor(Math.random() * data.data.length);
 				$(".repositories").append('<div class="repo">'+
-									'<h3><a href="'+data.data[rand].url+'">'+data.data[rand].owner+"/<b>"+data.data[rand].name+'</b></a></h3>'+
+									'<h3><a href="'+data.data[rand].url+'">'+data.data[rand].owner+"/<b>"+truncate(data.data[rand].name, 25)+'</b></a></h3>'+
 									'<div class="description">'+truncate(data.data[rand].description, 250)+'</div>'+
 									'<div class="extras">'+
 										'<div class="extra"><i class="fas fa-code"></i> '+data.data[rand].language+'</div>'+
@@ -30,7 +30,7 @@ $(document).ready(function() {
 	function truncate(w, size){
 		var truncated = w.substring(0, size);
 		if (w.length > size)
-			truncated += "...";
+			truncated += "&hellip;";
 	    return truncated;
 	};
 });
