@@ -18,6 +18,7 @@ $(document).ready(function() {
 			$(this).text("Saving..");
 
 			chrome.storage.sync.set({keyword: keyword, language: language, animation: animation}, function() {
+				chrome.runtime.sendMessage({message: "fetch"});
 				$(".save").text("Saved!");
 				setTimeout(function() {
 					saving = false;

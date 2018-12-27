@@ -8,7 +8,7 @@
 	},
 	"background": {
 	    "scripts": [
-	      "js/jquery.js",
+	      "js/jquery.min.js",
 	      "js/loader.js"
 	    ]
     },

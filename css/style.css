@@ -145,7 +145,7 @@ canvas{
 
 @font-face {
   font-family: "meslo";
-  src: url("../font/meslo/MesloLGLDZ-Regular.ttf") format('truetype');
+  src: url("../font/MesloLGLDZ-Regular.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
